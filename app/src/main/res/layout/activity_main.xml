@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:background="#EDF0F2">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#EDF0F2">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BINUS EzyFoody"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:background="@drawable/rounded"
+            android:textAlignment="center"
+            android:padding="10dp"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RelativeLayout
+                style="@style/MainMenu"
+                android:background="@drawable/rounded"
+                android:layout_height="wrap_content"
+                android:minHeight="1dp"
+                android:onClick="drinkMenu">
+
+                <ImageView
+                    android:id="@+id/imgDrink"
+                    android:src="@drawable/drink"
+                    style="@style/ImageMain"
+                    />
+
+                <TextView
+                    android:text="Drinks"
+                    android:layout_below="@id/imgDrink"
+                    style="@style/TextMain"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MainMenu"
+                android:background="@drawable/rounded"
+                android:layout_height="wrap_content"
+                android:minHeight="1dp"
+                android:onClick="snackMenu">
+
+                <ImageView
+                    android:id="@+id/imgSnack"
+                    android:src="@drawable/snack"
+                    style="@style/ImageMain"
+                    />
+
+                <TextView
+                    android:text="Snacks"
+                    android:layout_below="@id/imgSnack"
+                    style="@style/TextMain"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MainMenu"
+                android:background="@drawable/rounded"
+                android:layout_height="wrap_content"
+                android:minHeight="1dp"
+                android:onClick="foodMenu">
+
+                <ImageView
+                    android:id="@+id/imgFood"
+                    android:src="@drawable/food"
+                    style="@style/ImageMain"
+                    />
+
+                <TextView
+                    android:text="Foods"
+                    android:layout_below="@id/imgFood"
+                    style="@style/TextMain"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MainMenu"
+                android:background="@drawable/rounded"
+                android:layout_height="wrap_content"
+                android:minHeight="1dp"
+                android:onClick="topupMenu">
+
+                <ImageView
+                    android:id="@+id/imgTopup"
+                    android:src="@drawable/money"
+                    style="@style/ImageMain"
+                    />
+
+                <TextView
+                    android:text="Top Up"
+                    android:layout_below="@id/imgTopup"
+                    style="@style/TextMain"
+                    />
+            </RelativeLayout>
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+

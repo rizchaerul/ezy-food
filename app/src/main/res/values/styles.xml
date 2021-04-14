@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#07549D</item>
+        <item name="colorPrimaryDark">#07549D</item>
+        <item name="colorAccent">#07549D</item>
+    </style>
+
+    <style name="Menu">
+        <item name="android:background">@drawable/rounded</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="ImageMain">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="TextMain">
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_below="@id/imgDrink"-->
+<!--        android:layout_margin="10dp"-->
+
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+</resources>
